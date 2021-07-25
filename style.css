@@ -32,7 +32,7 @@ nav #yes-menu{
 
 }
 nav ul li{
-    padding:0 10px;
+    padding:0 20px;
     transition: 1s;
     color:white;
     font-weight: 600;
@@ -148,5 +148,11 @@ ul li:hover{
     .bubble {
        
         right:30px;
+    }
+    nav ul li{
+        padding:0 7px;
+        transition: 1s;
+        color:white;
+        font-weight: 500;
     }
 }

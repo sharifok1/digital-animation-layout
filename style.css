@@ -1,0 +1,152 @@
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+}
+nav{
+    width: 50px;
+    background-color: #af7171;
+    height: 100vh;
+    position:absolute;
+    right:0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav #yes-menu{
+    position: absolute;
+    top:10px;
+    right:10px;
+    cursor: pointer;
+    transition: 1s;
+
+}
+ nav ul{
+    display: flex;
+    padding:5px 10px;
+    position: absolute;
+    top:10px;
+    right:50px;
+    transition:1s;
+
+
+}
+nav ul li{
+    padding:0 10px;
+    transition: 1s;
+    color:white;
+    font-weight: 600;
+}
+#sort-menu{
+    display: none;
+    transition: 1s;
+}
+.socile-link img{
+    padding:10px;
+}
+.header{
+    height: 100vh;
+    width:100%;
+    background-image: url(under-water.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header h2{
+    color:#ec5f00;
+    font-size: 40px;
+    font-weight: 800;
+    padding:40px 20px;
+}
+.header h1{
+    color:white;
+    font-size: 60px;
+    font-weight: 800;
+    padding-top:150px;
+    padding-bottom: 50px;;
+}
+.header-line{
+    padding-left: 50px;
+}
+.header-line button{
+    background-color: turquoise;
+    padding:10px 15px;
+    border-radius: 15px;
+    border: 1px solid red;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.bubble {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    position: absolute;
+    top:-70px;
+    right:20px;
+}
+.bubble img{
+    animation: bubble 5s linear infinite;
+
+}
+@keyframes bubble{
+    0%{
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+    50%{
+    
+        opacity: 1;
+    }
+    70%{
+        
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(20vh); 
+        opacity: 0;
+    }
+    
+}
+.bubble img:nth-child(1){
+    animation-delay: 6s;
+    
+}
+.bubble img:nth-child(2){
+    animation-delay: 2s;
+}
+.bubble img:nth-child(3){
+    animation-delay: s;
+}
+.bubble img:nth-child(4){
+    animation-delay: 3s;
+}
+.bubble img:nth-child(5){
+    animation-delay: 6s;
+}
+
+
+/* ====================================menu bar control */
+#sort-menu:checked ~ ul{
+    display: none;
+    transition: .5s;
+    transform: rotate(360deg);
+} 
+ul li:hover{
+    border-bottom:2px solid red;
+    padding:5px 5px;
+    border-radius: 20px;
+
+}
+@media only screen and (max-width:768px){
+    .header h1{
+        font-size: 50px;
+       
+    }
+    .header-line{
+        padding-left: 20px;
+    }
+    .bubble {
+       
+        right:30px;
+    }
+}
